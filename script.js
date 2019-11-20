@@ -36,7 +36,7 @@ $(document).ready(function() {
     // To calculate the no. of days between two dates 
     var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24); 
 
-    var weeks = Math.round(Difference_In_Days / 7);
+    var weeks = Math.floor(Difference_In_Days / 7);
     
     for (var i = 0; i < 3; i++) {
         var index = (i + weeks) % 3;
